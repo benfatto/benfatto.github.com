@@ -1,0 +1,283 @@
+/**
+*
+*
+*
+* @colordef #ecfdb4 lite yellow background
+* @colordef #00abbc lite blue
+* @colordef #a6ce39 lite green
+*/
+*{
+  outline:0px;
+  font-family:Arial;
+}
+@font-face {
+  font-family:'Capitalis Typ Oasis';
+  src:url('CapitalisTypOasis.ttf');
+}
+body{
+  margin:0px;
+  padding:0px;
+  text-align:center;
+}
+#bg{
+  position:fixed;
+  left:0px;
+  right:0px;
+  top:0px;
+  z-index:0;
+  width:100%;
+  height:100%;
+  border:0px;
+}
+#art{
+  width:900px;
+  height:600px;
+  border:0px;
+  margin:20px auto;
+}
+#page-wrapper{
+  z-index:2; 
+  text-align:center;
+  position:absolute;
+  width:100%;
+  top:0px;
+  bottom:0px;
+  overflow:hidden;
+}
+#page-shadow{
+  z-index:1; 
+  position:absolute;
+  width:100%;
+  top:0px;
+  bottom:0px;
+  overflow:hidden;
+  KHTMLOpacity: 0.7;
+  MozOpacity: 0.7;
+  -khtml-opacity:.7;
+  -moz-opacity:.7;
+  filter:alpha(opacity:0.7);
+  -ms-filter:"alpha(opacity=70)";
+  filter:alpha(opacity=70);
+  opacity:.7;
+  display:none;
+  background-color:#000;
+}
+
+/**
+* menu
+*/
+#menu{
+  position:absolute;
+  bottom:20px;
+  width:100%;
+  background: #88bfe8; /* old browsers */
+  background: -moz-linear-gradient(top, #88bfe8 0%, #70b0e0 100%); /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#88bfe8), color-stop(100%,#70b0e0)); /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88bfe8', endColorstr='#70b0e0',GradientType=0 ); /* ie */
+  outline-width:3px;
+  outline-style:solid;
+  outline-color:#88bfe8;
+  border-width:2px 0px 2px 0px;
+  border-style:solid;
+  border-color:#fff;
+  z-index:10;
+}
+#menu a{
+  display:block;
+  float:left;
+  padding:12px 8px 10px 8px;
+  color:#FFF;
+  text-shadow:#ddd 0px 0px 1px;
+  text-decoration:none;
+  font-family:'Capitalis Typ Oasis';
+  font-size:20px;
+}
+#menu-small-links a{
+  font-size:12px;
+}
+#menu a:hover{
+  color:#000;
+}
+/**
+* portfolio 
+*/
+#portfolio-shadow{
+  position:absolute;
+  width:300px;
+  right:-300px;
+  top:0px;
+  bottom:0px;
+  KHTMLOpacity: 0.7;
+  MozOpacity: 0.7;
+  -khtml-opacity:.7;
+  -moz-opacity:.7;
+  filter:alpha(opacity:0.7);
+  -ms-filter:"alpha(opacity=70)";
+  filter:alpha(opacity=70);
+  opacity:.7;
+  background-color:#000;
+  z-index:14;
+}
+#portfolio-bar{
+  overflow-x:hidden;
+  overflow-y:scroll;
+  position:absolute;
+  width:300px;
+  right:-300px;
+  top:0px;
+  bottom:0px;
+    z-index:15;
+}
+#portfolio-bar img{
+  width:260px;
+  height:180px;
+  margin:10px 0px 0px 10px;
+  float:left;
+  clear:both;
+  cursor:pointer;
+}
+
+#current-image{
+  position:absolute;
+  top:10px;
+  left:10px;
+  z-index:8;
+  left:2500px;
+  width:860px;
+  height:600px;
+}
+#current-image img{
+  margin-left:60px;
+  width:800px;
+  height:600px;
+  border:0px;
+}
+
+#email-wrapper{
+  KHTMLOpacity: 0.8;
+  MozOpacity: 0.8;
+  -khtml-opacity:.8;
+  -moz-opacity:.8;
+  filter:alpha(opacity:0.8);
+  -ms-filter:"alpha(opacity=80)";
+  filter:alpha(opacity=80);
+  opacity:.8;
+  position:absolute;
+  z-index:30;
+  bottom:80px;
+  left:10px;
+}
+#email{
+  border:2px solid #000;
+  background-color:#a6ce39;
+  padding:10px;
+  -webkit-border-radius: 8px;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius: 8px;
+  -moz-border-radius-bottomleft: 0;
+  border-radius: 8px;
+  border-bottom-left-radius: 0;
+}
+#email span{
+  color:#000;
+  font-family:arial;
+  font-size:20px;
+}
+#email-arrow{
+  border-width:40px 20px 0px 0px;
+  border-color:#a6ce39 transparent transparent transparent;
+  border-style:solid;
+  width:0px;
+  height:0px;
+  float:left;
+  margin:-2px 0px 0px -22px ;
+}
+#email-arrow-border{
+  border-width:44px 24px 0px 0px;
+  border-color:#000 transparent transparent transparent;
+  border-style:solid;
+  width:0px;
+  height:0px;
+  float:left;
+}
+
+#creative-bar{
+  position:absolute;
+  bottom:2px;
+  right:2px;
+  display:block;
+  padding:0px 2px 2px 2px;
+  color:#fff;
+  font-size:12px;
+  font-variant:small-caps;
+  text-transform:lowercase;
+  text-decoration:none;
+  background-color:#000;
+  font-weight:bolder;
+  border-radius:2px;
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  z-index:100;
+}
+#contact{
+  display:none;
+  position:absolute;
+  top:150px;
+  width:800px;
+  margin-left:-400px;
+  left:50%;
+  padding:30px;
+  border:3px solid #fff;
+  background-color:#88bfe8;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  z-index:40;
+}
+#contact a{
+  font-size:80px;
+  font-weight:bolder;
+  text-shadow:#999 -1px -1px 1px;
+  text-decoration:none;
+  color:#fff;
+}
+#portfolio-tip-wrapper{
+  position:absolute;
+  z-index:30;
+  width:800px;
+  overflow:hidden;
+  margin:30px 0px 0px 0px;
+  padding-top:4px;
+}
+#portfolio-tip{
+  width:880px;
+  height:40px;
+  background:#88bfe8; /* old browsers */
+  background:-moz-linear-gradient(top, #88bfe8 0%, #70b0e0 100%); /* firefox */
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#88bfe8), color-stop(100%,#70b0e0)); /* webkit */
+  filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#88bfe8', endColorstr='#70b0e0',GradientType=0 ); /* ie */
+  outline-width:3px;
+  outline-style:solid;
+  outline-color:#88bfe8;
+  border-width:2px 0px 2px 0px;
+  border-style:solid;
+  border-color:#fff;
+}
+#portfolio-tip-arrow{
+  float:left;
+  clear:both;
+  border-width:30px 0px 0px 60px;
+  border-color:#BEDEF7 transparent transparent transparent;
+  border-style:solid;
+  margin-top:1px;
+}
+#portfolio-tip span{
+  display:block;
+  float:left;
+  padding:12px 8px 10px 8px;
+  color:#FFF;
+  text-shadow:#ddd 0px 0px 1px;
+  text-decoration:none;
+  font-family:'Capitalis Typ Oasis';
+  font-size:20px;
+}
