@@ -4,11 +4,12 @@ $(function (){
   $('#portfolio-tip-wrapper').append('<div id="portfolio-tip"><span></span></div>');
   $('#portfolio-tip-wrapper').append('<div id="portfolio-tip-arrow"></div>');
   
-  $('body').prepend('<div id="email-wrapper"></div>');
-  $('#email-wrapper').append('<div id="email"><span>benfattodesign@gmail.com</span></div>');
-  $('#email-wrapper').append('<div id="email-arrow-border"></div>');
-  $('#email-wrapper').append('<div id="email-arrow"></div>');
-
+  /*
+    $('body').prepend('<div id="email-wrapper"></div>');
+    $('#email-wrapper').append('<div id="email"><span>benfattodesign@gmail.com</span></div>');
+    $('#email-wrapper').append('<div id="email-arrow-border"></div>');
+    $('#email-wrapper').append('<div id="email-arrow"></div>');
+  */
   
   
   function hidePortfolio(){
@@ -30,9 +31,11 @@ $(function (){
     
     $('#portfolio-bar, #portfolio-shadow').animate({right:'0px'},1000);
   
-    $('#menu a[name="portfolio"]').css('color','#000');
+    $('#menu a[name="portfolio"]').css('color','#70b0e0');
   
     $('#portfolio-bar img').first().trigger('click');
+    
+    //$('#portfolio-horizontal-bar')
     
     return false;
   });
